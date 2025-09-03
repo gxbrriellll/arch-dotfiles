@@ -35,9 +35,10 @@ fc-cache -fv
 
 rm -rf ~/arch-install
 
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 
 sudo systemctl enable gdm
 
 echo "[✓]"
 sudo reboot now
+

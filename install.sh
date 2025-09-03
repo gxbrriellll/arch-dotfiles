@@ -40,7 +40,7 @@ mkdir -p /mnt/boot/efi
 mount "$EFI_PART" /mnt/boot/efi
 
 echo "[✓]"
-pacstrap -K /mnt base base-devel linux linux-headers linux-firmware amd-ucode \
+pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
   sudo nano fastfetch htop make curl wget bluez bluez-utils networkmanager \
   cargo gcc mpv pipewire efibootmgr grub dosfstools mtools os-prober alsa-utils \
   pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol noto-fonts \
@@ -96,3 +96,4 @@ EOF
 umount -lR /mnt
 echo "[✓]"
 reboot now
+

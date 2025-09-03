@@ -1,3 +1,6 @@
+TESTINGGGGGGGGGGGGGGGGGGGGGGG
+
+
 #!/bin/bash
 set -e
 
@@ -96,3 +99,4 @@ EOF
 umount -lR /mnt
 echo "[✓]"
 reboot now
+

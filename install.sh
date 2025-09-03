@@ -41,7 +41,7 @@ mount "$EFI_PART" /mnt/boot/efi
 
 echo "[✓]"
 pacstrap -K /mnt base base-devel linux linux-headers linux-firmware amd-ucode \
-  sudo git nano fastfetch htop make curl wget bluez bluez-utils networkmanager \
+  sudo nano fastfetch htop make curl wget bluez bluez-utils networkmanager \
   cargo gcc mpv pipewire efibootmgr grub dosfstools mtools os-prober alsa-utils \
   pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol noto-fonts \
   noto-fonts-emoji ttf-font-awesome ttf-liberation ttf-dejavu mesa-utils \

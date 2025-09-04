@@ -48,9 +48,9 @@ pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
   libva-utils p7zip xz gst-libav gst-plugins-base gst-plugins-good \
   gst-plugins-bad gst-plugins-ugly ffmpeg flatpak inxi mesa-demos mesa \
   wayland-protocols xorg-xwayland waybar kitty qt5-graphicaleffects \
-  pacman-contrib alacritty conky power-profiles-daemon xorg swww wofi wayland \
+  pacman-contrib alacritty conky power-profiles-daemon xorg swww rofi wayland \
   qt5-wayland qt5-base qt5-xcb-private-headers kio kconfig kcoreaddons \
-  ntfs-3g nwg-look svn xdg-desktop-portal xdg-desktop-portal-wlr grim rofi \
+  ntfs-3g nwg-look svn xdg-desktop-portal xdg-desktop-portal-wlr grim rofi-emoji \
   libxcb slurp nautilus eog gnome-text-editor gnome-control-center \
   gnome-themes-extra gnome-tweaks vlc firefox
 
@@ -96,4 +96,5 @@ EOF
 umount -lR /mnt
 echo "[✓]"
 reboot now
+
 

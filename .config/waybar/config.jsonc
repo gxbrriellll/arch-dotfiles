@@ -4,9 +4,9 @@
     "margin-top": 10,
     "margn-bottom": 0,
 
-    "modules-left": ["custom/launcher","cpu","memory","disk","network"],
+    "modules-left": ["custom/launcher","cpu","memory","disk","network","custom/bluetooth"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wlr/taskbar","pulseaudio","battery","clock","custom/power"],
+    "modules-right": ["wlr/taskbar","pulseaudio","clock","battery","custom/power"],
 
     "pulseaudio": {
         "tooltip": false,
@@ -80,7 +80,6 @@
     "cpu": {
         "interval": 1,
         "format": "<span color='#f7768e'> </span> {}%",
-        "max-length": 10
     },
 
     "disk": {
@@ -91,7 +90,6 @@
     "memory": {
         "interval": 1,
         "format": "<span color='#7dcfff'> </span> {used}GiB",
-        "max-length": 10
     },
 
     "custom/launcher": {
@@ -101,14 +99,23 @@
 
     "custom/power": {
         "format": "<span color='#f7768e'>⏻</span>",
-        "on-click": "wlogout"
+        "on-click": "wlogout",
+        "tooltip": false
     },
 
-    "wlr/taskbar": {
+       "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 18,
+        "icon-size": 23,
         "on-click": "activate",
         "on-click-middle": "close",
-        "ignore-list": []
+        "ignore-list": [],
+        "tooltip": false
+    },
+    "custom/bluetooth": {
+        "format": " ",
+        "icon-size": 18,
+        "on-click": "blueman-manager",
+        "interval": 1,
+        "tooltip": false
     }
 }

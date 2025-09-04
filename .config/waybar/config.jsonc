@@ -1,8 +1,10 @@
 {
     "layer": "top",
-    "width": 1280,
+    "width": 1000,
     "margin-top": 10,
-    "margn-bottom": 0,
+    "margin-bottom": 0,
+    "max-length": 50,
+    "height": 30,
 
     "modules-left": ["custom/launcher","cpu","memory","disk","network","custom/bluetooth"],
     "modules-center": ["hyprland/workspaces"],

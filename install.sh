@@ -42,17 +42,17 @@ mount "$EFI_PART" /mnt/boot/efi
 echo "[✓]"
 pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
   sudo nano fastfetch htop make curl wget bluez bluez-utils networkmanager \
-  cargo gcc mpv pipewire efibootmgr grub dosfstools mtools os-prober alsa-utils \
+  cargo gcc pipewire efibootmgr grub dosfstools mtools os-prober alsa-utils \
   pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol noto-fonts \
   noto-fonts-emoji ttf-font-awesome ttf-liberation ttf-dejavu mesa-utils \
   libva-utils p7zip xz gst-libav gst-plugins-base gst-plugins-good \
   gst-plugins-bad gst-plugins-ugly ffmpeg flatpak inxi mesa-demos mesa \
   wayland-protocols xorg-xwayland waybar kitty qt5-graphicaleffects \
-  pacman-contrib alacritty conky power-profiles-daemon xorg swww rofi wayland \
+  pacman-contrib power-profiles-daemon xorg swww rofi wayland \
   qt5-wayland qt5-base qt5-xcb-private-headers kio kconfig kcoreaddons \
-  ntfs-3g nwg-look svn xdg-desktop-portal xdg-desktop-portal-wlr grim rofi-emoji \
+  ntfs-3g xdg-desktop-portal xdg-desktop-portal-wlr grim rofi-emoji \
   libxcb slurp nautilus eog gnome-text-editor gnome-control-center \
-  gnome-themes-extra gnome-tweaks vlc firefox
+  gnome-themes-extra gnome-tweaks vlc firefox vlc-plugin-gstreamer vlc-plugin-ffmpeg
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
@@ -96,5 +96,6 @@ EOF
 umount -lR /mnt
 echo "[✓]"
 reboot now
+
 
 

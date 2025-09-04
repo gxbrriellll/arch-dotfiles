@@ -6,7 +6,7 @@
     "max-length": 50,
     "height": 30,
 
-    "modules-left": ["custom/launcher","cpu","memory","disk","network","custom/bluetooth"],
+    "modules-left": ["custom/launcher","cpu","memory","disk","custom/bluetooth","network"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["wlr/taskbar","pulseaudio","clock","battery","custom/power"],
 

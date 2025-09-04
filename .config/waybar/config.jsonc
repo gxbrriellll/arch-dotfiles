@@ -4,9 +4,9 @@
     "margin-top": 10,
     "margn-bottom": 0,
 
-    "modules-left": ["custom/launcher","cpu","memory","disk"],
+    "modules-left": ["custom/launcher","cpu","memory","disk","network"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wlr/taskbar","network","pulseaudio","battery","clock","custom/power"],
+    "modules-right": ["wlr/taskbar","pulseaudio","battery","clock","custom/power"],
 
     "pulseaudio": {
         "tooltip": false,

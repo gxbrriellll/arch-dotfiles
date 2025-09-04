@@ -45,10 +45,10 @@ pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
   cargo gcc pipewire efibootmgr grub dosfstools mtools os-prober alsa-utils \
   pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol noto-fonts \
   noto-fonts-emoji ttf-font-awesome ttf-liberation ttf-dejavu mesa-utils \
-  libva-utils p7zip xz gst-libav gst-plugins-base gst-plugins-good \
+  libva-utils gnome-backgrounds p7zip xz gst-libav gst-plugins-base gst-plugins-good \
   gst-plugins-bad gst-plugins-ugly ffmpeg flatpak inxi mesa-demos mesa \
   wayland-protocols xorg-xwayland waybar kitty qt5-graphicaleffects \
-  pacman-contrib power-profiles-daemon xorg swww rofi wayland \
+  pacman-contrib gnome-software power-profiles-daemon xorg swww rofi wayland \
   qt5-wayland qt5-base qt5-xcb-private-headers kio kconfig kcoreaddons \
   ntfs-3g xdg-desktop-portal xdg-desktop-portal-wlr grim rofi-emoji \
   libxcb slurp nautilus eog gnome-text-editor gnome-control-center \
@@ -96,6 +96,7 @@ EOF
 umount -lR /mnt
 echo "[✓]"
 reboot now
+
 
 
 

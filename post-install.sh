@@ -16,7 +16,7 @@ makepkg -si --noconfirm
 cd ~
 rm -rf /tmp/yay
 
-yay -Syu --noconfirm wlr-randr-git appimagelauncher wlroots waypaper cliphist wofi-emoji wlogout
+yay -Syu --noconfirm wlr-randr-git appimagelauncher wlroots waypaper cliphist wlogout
 
 echo "QT_QPA_PLATFORM=wayland" | sudo tee /etc/environment.d/qt-wayland.conf
 
@@ -41,4 +41,5 @@ sudo systemctl enable gdm
 
 echo "[✓]"
 sudo reboot now
+
 

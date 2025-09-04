@@ -198,7 +198,7 @@ window#waybar.hidden {
 #custom-launcher {
     background: #222330;
     border-radius: 18px;
-    margin: 8px 4px;
+    margin: 6px 4px;
     padding-left: 10px;
     padding-right: 6px;
 }
@@ -206,7 +206,7 @@ window#waybar.hidden {
 #custom-power {
     background: #222330;
     border-radius: 18px;
-    margin: 8px 4px;
+    margin: 5px 4px;
     padding-left: 10px;
     padding-right: 13px;
 }

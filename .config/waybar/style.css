@@ -226,5 +226,5 @@ window#waybar.hidden {
     padding: 6px 10px;
 	  transition: none;
 	  color: #222330;
-  	  background: transparent;
+  	  background: #222330;
 }

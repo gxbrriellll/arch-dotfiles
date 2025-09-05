@@ -223,8 +223,8 @@ window#waybar.hidden {
     background: #222330;
     border-radius: 18px;
     margin: 6px 4px;
-    padding-left: 5px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 11px;
 	  color: #222330;
   	  background: #222330;
 }

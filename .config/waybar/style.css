@@ -209,14 +209,6 @@ window#waybar.hidden {
     padding-right: 13px;
 }
 
-#custom-bluetooth {
-    background: #222330;
-    border-radius: 18px;
-    margin: 7px;
-    padding-left: 10px;
-    padding-right: 2px;
-}
-
 #taskbar {
     background: #222330;
     border-radius: 18px;

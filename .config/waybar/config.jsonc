@@ -6,9 +6,9 @@
     "max-length": 50,
     "height": 30,
 
-    "modules-left": ["custom/launcher","cpu","memory","disk","custom/bluetooth","network"],
+    "modules-left": ["custom/launcher","cpu","memory","disk","network","tray"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["tray","pulseaudio","clock","battery","custom/power"],
+    "modules-right": ["pulseaudio","clock","battery","custom/power"],
 
     "pulseaudio": {
         "tooltip": false,
@@ -113,11 +113,4 @@
         "ignore-list": [],
         "tooltip": false
     },
-    "custom/bluetooth": {
-        "format": " ",
-        "icon-size": 18,
-        "on-click": "blueman-manager",
-        "interval": 1,
-        "tooltip": false
-    }
 }

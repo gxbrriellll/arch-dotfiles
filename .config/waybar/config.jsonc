@@ -8,7 +8,7 @@
 
     "modules-left": ["custom/launcher","cpu","memory","disk","custom/bluetooth","network"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wlr/taskbar","pulseaudio","clock","battery","custom/power"],
+    "modules-right": ["tray","pulseaudio","clock","battery","custom/power"],
 
     "pulseaudio": {
         "tooltip": false,
@@ -105,7 +105,7 @@
         "tooltip": false
     },
 
-       "wlr/taskbar": {
+       "tray": {
         "format": "{icon}",
         "icon-size": 17,
         "on-click": "activate",

@@ -3,9 +3,9 @@ set -e
 
 # Configs:
 
-read -rp "👉 hostname: " HOSTNAME
-read -rp "👉 user: " USERNAME
-read -rsp "👉 passwd/$USERNAME: " PASSWORD
+read -rp "--> hostname: " HOSTNAME
+read -rp "--> user: " USERNAME
+read -rsp "--> passwd/$USERNAME: " PASSWORD
 echo ""
 
 DEVICE="/dev/sda"
@@ -76,7 +76,7 @@ echo "$USERNAME:$PASSWORD" | chpasswd
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
 mkdir -p /windows
-mount /dev/sda1 /windows 2>/dev/null || echo "⚠️ /dev/sda1 (Windows)."
+mount /dev/sda1 /windows 2>/dev/null || echo "!! /dev/sda1 (Windows)."
 
 grep -q "GRUB_DISABLE_OS_PROBER" /etc/default/grub || echo "GRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
 sed -i 's/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=30/' /etc/default/grub

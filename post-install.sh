@@ -26,7 +26,7 @@ echo "[*]"
 cd ~
 git clone --depth=1 https://github.com/gxbrriellll/arch-install.git ~/arch-install
 
-rsync -avh --progress ~/arch-install-dual-boot-windows/.config/ ~/.config/
+rsync -avh --progress ~/arch-install/.config/ ~/.config/
 
 mkdir -p ~/.local/share/fonts
 rsync -avh --progress ~/arch-install/.local/share/fonts/ ~/.local/share/fonts/
@@ -41,3 +41,4 @@ sudo systemctl enable gdm
 
 echo "[✓]"
 sudo reboot now
+

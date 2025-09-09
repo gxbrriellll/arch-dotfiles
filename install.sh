@@ -15,9 +15,6 @@ ROOT_PART="${DEVICE}6"
 
 # Setup:
 
-pacman -Sy --noconfirm
-pacman -S --noconfirm archlinux-keyring
-
 echo "[*]"
 parted --script "$DEVICE" mkpart primary fat32 1MiB 513MiB
 parted --script "$DEVICE" name 4 efi
@@ -96,8 +93,3 @@ EOF
 umount -lR /mnt
 echo "[✓]"
 reboot now
-
-
-
-
-

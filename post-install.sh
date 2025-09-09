@@ -24,12 +24,12 @@ flatpak install flathub com.github.tchx84.Flatseal -y
 
 echo "[*]"
 cd ~
-git clone --depth=1 https://github.com/gxbrriellll/arch-install-dual-boot-windows.git ~/arch-install
+git clone --depth=1 https://github.com/gxbrriellll/arch-install.git ~/arch-install
 
 rsync -avh --progress ~/arch-install-dual-boot-windows/.config/ ~/.config/
 
 mkdir -p ~/.local/share/fonts
-rsync -avh --progress ~/arch-install-dual-boot-windows/.local/share/fonts/ ~/.local/share/fonts/
+rsync -avh --progress ~/arch-install/.local/share/fonts/ ~/.local/share/fonts/
 
 fc-cache -fv
 
@@ -41,8 +41,3 @@ sudo systemctl enable gdm
 
 echo "[✓]"
 sudo reboot now
-
-
-
-
-

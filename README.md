@@ -16,3 +16,5 @@ pacman -Syu --noconfirm archlinux-keyring git
 git clone https://github.com/gxbrriellll/arch-install.git
 
 cd arch-install
+
+bash install.sh

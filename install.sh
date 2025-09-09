@@ -41,7 +41,7 @@ pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
   sudo nano fastfetch htop make curl wget bluez blueman bluez-utils networkmanager \
   cargo gcc pipewire efibootmgr grub dosfstools mtools os-prober alsa-utils \
   pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol noto-fonts \
-  noto-fonts-emoji ttf-font-awesome ttf-liberation ttf-dejavu mesa-utils \
+  noto-fonts-emoji ttf-font-awesome archlinux-keyring git ttf-liberation ttf-dejavu mesa-utils \
   libva-utils gnome-backgrounds p7zip xz gst-libav gst-plugins-base gst-plugins-good \
   gst-plugins-bad gst-plugins-ugly ffmpeg flatpak inxi mesa-demos mesa \
   wayland-protocols xorg-xwayland waybar kitty qt5-graphicaleffects \
@@ -93,3 +93,4 @@ EOF
 umount -lR /mnt
 echo "[✓]"
 reboot now
+

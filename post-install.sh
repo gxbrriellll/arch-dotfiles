@@ -3,7 +3,7 @@ set -e
 
 sudo sed -i '/\[multilib\]/,/Include/ s/^#//' /etc/pacman.conf
 
-sudo pacman -Syu --noconfirm lib32-mesa gdm hyprland
+sudo pacman -Syu --noconfirm archlinux-keyring lib32-mesa gdm hyprland
 
 mkdir -p ~/Pictures/Screenshots
 mkdir -p ~/Pictures/Wallpapers
@@ -41,4 +41,5 @@ sudo systemctl enable gdm
 
 echo "[✓]"
 sudo reboot now
+
 

@@ -8,9 +8,9 @@ PASSWORD
 
 exit
 
-pacman -Sy --noconfirm
+pacman -Sy
 
-pacman -Syu --noconfirm archlinux-keyring git
+pacman -S --noconfirm archlinux-keyring git
 
 git clone https://github.com/gxbrriellll/arch-install.git
 

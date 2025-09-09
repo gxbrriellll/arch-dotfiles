@@ -7,6 +7,6 @@ PASSWORD
 
 exit
 
-pacman -Sy
+pacman -Sy --noconfirm
 
 pacman -Syu --noconfirm archlinux-keyring git

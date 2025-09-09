@@ -1,3 +1,5 @@
+# Arch Install Dual Boot Windows
+
 iwctl
 
 station wlan0 get-networks

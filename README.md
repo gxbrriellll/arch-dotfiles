@@ -1,4 +1,4 @@
-# Arch Install Dual Boot Windows
+# install.sh (Dual Boot, Windows)
 
 iwctl
 
@@ -18,3 +18,11 @@ git clone https://github.com/gxbrriellll/arch-install.git
 cd arch-install
 
 bash install.sh
+
+# post-install.sh
+
+sudo nmcli dev wifi connect WIFI pasword "PASSWORD"
+
+cd arch-install
+
+bash post-install.sh
